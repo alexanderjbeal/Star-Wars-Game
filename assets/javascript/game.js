@@ -16,28 +16,28 @@ $(document).ready(function() {
             health: 120,
             attack: 6,
             imageUrl: "assets/images/jyn.png",
-            counter: 25
+            counter: 15
         }, 
         'vader': {
             name: 'vader',
             health: 130,
             attack: 9,
             imageUrl: "assets/images/vader.png",
-            counter: 20
+            counter: 15
         }, 
         'jedi': {
             name: 'jedi',
             health: 120,
             attack: 8,
             imageUrl: "assets/images/ninja.png",
-            counter: 20
+            counter: 15
         }, 
         'k2so': {
             name: 'k2so',
             health: 180,
             attack: 7,
             imageUrl: "assets/images/k2so.png",
-            counter: 20
+            counter: 15
         }
     };
     
@@ -220,6 +220,7 @@ $(document).ready(function() {
               renderMessage("clearMessage");
               restartGame("You Won!!!! GAME OVER!!!");
               jediKnow.play();
+              $("#attack-button").hide();
               // The following line will play the imperial march:
               setTimeout(function() {
               audio.play();
