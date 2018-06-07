@@ -123,7 +123,9 @@ $(document).ready(function() {
             if ($('#defender').children().length === 0) {
               renderCharacters(name, '#defender');
               $(this).hide();
+              $('header').css('display','none');
               renderMessage("clearMessage");
+              // $('header').prepend("<p>Select Your Opponent</p>")
             }
           });
         }
@@ -135,6 +137,7 @@ $(document).ready(function() {
             if (combatants[i].name == charObj) {
               // $('#defender').append("Your selected opponent")
               renderOne(combatants[i], areaRender, 'defender');
+              
             }
           }
         }
@@ -155,9 +158,11 @@ $(document).ready(function() {
           $('#defender').empty();
           var gameStateMessage = "You have defeated " + charObj.name + ", choose your next opponent.";
           renderMessage(gameStateMessage);
+          $('header').css('display','table');
           blaster.play();
         }
       };
+      
       //this is to render all characters for user to choose their computer
       renderCharacters(characters, '#characters-section');
       $(document).on('click', '.character', function() {
