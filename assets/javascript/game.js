@@ -2,12 +2,12 @@
 $(document).ready(function() {
 
     //audio clips
-    // let audio = new Audio('assets/audio/imperial_march.mp3');
-    // let force = new Audio('assets/audio/force.mp3');
-    // let blaster = new Audio('assets/audio/blaster-firing.mp3');
-    // let jediKnow = new Audio('assets/audio/jedi-know.mp3');
-    // let lightsaber = new Audio('assets/audio/light-saber-on.mp3');
-    // let rtwoo = new Audio('assets/audio/R2D2.mp3');
+    let audio = new Audio('assets/audio/imperial_march.mp3');
+    let force = new Audio('assets/audio/force.mp3');
+    let blaster = new Audio('assets/audio/blaster-firing.mp3');
+    let jediKnow = new Audio('assets/audio/jedi-know.mp3');
+    let lightsaber = new Audio('assets/audio/light-saber-on.mp3');
+    let rtwoo = new Audio('assets/audio/R2D2.mp3');
     
     //Array of Playable Characters
     let characters = {
@@ -100,7 +100,7 @@ $(document).ready(function() {
         }
         //render combatants
         if (areaRender == '#available-to-attack-section') {
-          $('header').prepend("<p>Choose Your Opponent</p>")
+          $('header').prepend("<p>Select Your Opponent</p>")
           for (var i = 0; i < charObj.length; i++) {
     
             renderOne(charObj[i], areaRender, 'enemy');
