@@ -1,0 +1,236 @@
+body {
+  background-color: black;
+  background-image: url('../images/space.jpg');
+  font-family: 'Press Start 2P', cursive;
+}
+header {
+  padding: 40px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+header p {
+  color: #FBDD4C;
+  text-shadow: 3px 3px black;
+  font-size: 20px;
+}
+header img {
+  width: 300px;
+}
+.logo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0 20px;
+}
+.intro-container p {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px black;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.character-section {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.game-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0 20px;
+}
+.game-container div {
+    float: left;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.character-container {
+  width: 45%;
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.character-container div {
+  width: 45%;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#fight-section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+ /* SECTION */
+
+  .characterWrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #gameMessage {
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 3px 3px black;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  #choose-enemy-button {
+    visibility: hidden;
+  }
+  #restart-button {
+    visibility: hidden;
+  }
+  #turn-counter {
+    font-size: 150%;
+  }
+  
+/* GOOD GUY */
+
+  #selected-character {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+  }
+  .character {
+    width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  .character img {
+    border: 0 none;
+    width: 100%;
+  }
+  .character-name {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px black;
+  }
+  .character-health {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-align: center;
+    color: #FBDD4C;
+    text-shadow: 3px 3px black;
+  }
+
+/* BAD GUY */
+  
+  #defender {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    display: table;
+  }
+  #defender-name {
+    text-align: center;
+  }
+  #defender-image {
+    padding: 0px 16px;
+    margin: 3px 0px;
+  }
+  #defender-health {
+    text-align: center;
+  }
+  
+
+  /* FIGHT SECTION */
+
+  .attack {
+    text-align: center;
+  }
+  .action {
+    margin: 15px 0px;
+  }
+  #attack-button{
+      visibility: hidden;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      width: 50%;
+  }
+  #attack-button:active {
+
+  }
+  .btn {
+      background: #FBDD4C;
+      color: black;
+      text-transform: uppercase;
+      margin: 0 auto;
+      width: 50%;
+      text-align: center;
+      padding: 20px;
+  }
+  .enemy {
+      width: 20%;
+      margin: 0 auto;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+    cursor: pointer;
+  }
+  #attacker {
+      padding: 5px;
+  }
+  .target-enemy {
+    color: white;
+  }
+  
+
+  /* CHOOSE YOUR NEXT OPPONENT */
+
+  #available-to-attack-section {
+    margin: 30px 0 0 0;
+    width: 100%;
+  }
+  #available-to-attack-section img {
+      width: 35%;
+  }
+  
+ 
+  
+  /*---------------------*/
+  /*   Media Queries     */
+  /*---------------------*/
+  @media only screen and (max-device-width: 768px) {
+    .character {
+      display: block;
+    height: 150px;    
+    }
+    #gameMessage {
+      font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    }
+  }
