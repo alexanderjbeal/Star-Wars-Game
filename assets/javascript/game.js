@@ -159,6 +159,7 @@ $(document).ready(function() {
           var gameStateMessage = "You have defeated " + charObj.name + ", choose your next opponent.";
           renderMessage(gameStateMessage);
           $('header').css('display','table');
+          $('#gameMessage div').css('width','100%');
           blaster.play();
         }
       };
@@ -210,6 +211,9 @@ $(document).ready(function() {
               renderMessage("clearMessage");
               restartGame("You have been defeated...GAME OVER!!!");
               force.play();
+              $('#gameMessage div').css('width','100%');
+              $("#selected-character").hide();
+              $('header').css('display','none');
               $("#attack-button").unbind("click");
               $("#attack-button").hide();
             }
@@ -221,6 +225,8 @@ $(document).ready(function() {
               restartGame("You Won!!!! GAME OVER!!!");
               jediKnow.play();
               $("#attack-button").hide();
+              $('#gameMessage div').css('width','100%');
+              $('header').css('display','none');
               // The following line will play the imperial march:
               setTimeout(function() {
               audio.play();
