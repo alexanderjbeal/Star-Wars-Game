@@ -52,9 +52,9 @@ header img {
     margin: 0 auto;
     display: table;
     padding: 20px 0 20px;
+    text-align: center;
 }
 .game-container div {
-    float: left;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -97,6 +97,10 @@ header img {
     text-transform: uppercase;
     margin-bottom: 20px;
   }
+  #gameMessage div {
+    float: left;
+    margin-bottom: 20px;
+  }
   #choose-enemy-button {
     visibility: hidden;
   }
@@ -110,13 +114,13 @@ header img {
 /* GOOD GUY */
 
   #selected-character {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
-    float: right;
+    float: left;
   }
   .character {
-    width: 20%;;
+    width: 20%;
     margin: 0 auto;
     cursor: pointer;
     display: inline-block;
@@ -149,7 +153,7 @@ header img {
 /* BAD GUY */
   
   #defender {
-    width: 100%;
+    width: 50%;
     float: left;
     margin: 0 auto;
     display: table;

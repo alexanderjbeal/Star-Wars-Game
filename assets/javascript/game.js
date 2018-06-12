@@ -14,16 +14,16 @@ $(document).ready(function() {
         'jyn': {
             name: 'jyn',
             health: 120,
-            attack: 6,
+            attack: 8,
             imageUrl: "assets/images/jyn.png",
-            counter: 15
+            counter: 14
         }, 
         'vader': {
             name: 'vader',
             health: 130,
             attack: 9,
             imageUrl: "assets/images/vader.png",
-            counter: 15
+            counter: 11
         }, 
         'jedi': {
             name: 'jedi',
@@ -34,7 +34,7 @@ $(document).ready(function() {
         }, 
         'k2so': {
             name: 'k2so',
-            health: 180,
+            health: 150,
             attack: 7,
             imageUrl: "assets/images/k2so.png",
             counter: 15
