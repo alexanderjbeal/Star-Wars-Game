@@ -1,6 +1,6 @@
 # Star-Wars-Game
 
-https://alexanderjbeal.github.io/Star-Wars-Game/
+https://alexanderjbeal.github.io/star-wars-game/
 
 Select a character in order to play
 
